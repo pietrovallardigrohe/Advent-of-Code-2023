@@ -5,7 +5,7 @@ use regex::Regex;
 
 fn main() {
     let input_text = fs::read_to_string("src/input.txt").unwrap();
-    let mut lines = input_text.lines();
+    let lines = input_text.lines();
 
     let mut total_id = 0;
     let parser_regex = Regex::new(r"([0-9]+ (r|g|b))").unwrap();
